@@ -1,0 +1,218 @@
+
+/*
+  ========================================
+  Navigation Bar
+  ========================================
+*/
+.section .bg{ 
+  position: absolute;
+  margin: 0 0 0 0; 
+  width: 100%; 
+  height: 100%;
+}
+.section .bg img { 
+  display: block; 
+  width: 100%; 
+  height: 100%;
+}
+
+.section1 .menu {
+  text-align: center;
+  position: relative;
+}
+.section1 .menu ul {
+  font: bold 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  float: right;
+  margin-top: 60px;
+  right: 30px;
+  position: relative;
+}
+.section1 .menu li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.section1 .menu a {
+  background: black;
+  border-right: 1px solid rgba(0, 0, 0, .5);
+  color: #fff;
+  padding: 12px 12px;
+  text-decoration: none;
+}
+.section1 .menu a:hover {
+  background: lightgrey;
+  color: black;
+  box-shadow: 10px 10px 5px #888888;
+  text-decoration: none;
+}
+.section1 .menu li:first-child a {
+  border-radius: 4px 0 0 4px;
+}
+.section1 .menu li:last-child a {
+  border-right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.section1 .title {
+  position: absolute;
+  display: inline-block;
+  color: #fff;
+  left: 8%;
+  top: 25px;
+  font-size: 14px;
+}
+
+/*
+  ========================================
+  Project
+  ========================================
+*/
+#footer {
+  color: #fff;
+}
+
+#footer .copyright {
+  text-align: center;
+  position: relative;
+  clear: both;
+  display: block;
+  bottom: 47px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#footer .contact {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+/*
+  ========================================
+  Slide
+  ========================================
+*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+#superContainer {
+    height: 100%;
+    position: relative;
+}
+
+#fullPage-nav { 
+  _display: none; 
+  font-size: 12px;
+}
+
+#fullPage-nav li a { 
+  float: right; 
+  width: 21px; 
+  height: 21px; 
+  color: #fff; 
+  text-decoration: none; 
+  text-align: left; 
+}
+#fullPage-nav li .active { 
+  background-position: 0 bottom;
+}
+
+.fullPage-tooltip { 
+  float: right; 
+  top: 0; 
+  text-align: right;
+  margin-right: 18px; 
+  font: 15px "cochin"; 
+  color: #fff; 
+  line-height: 0px;
+  font-weight: bold;
+}
+
+#fullPage-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+}
+
+#fullPage-nav.right {
+    right: 17px;
+}
+
+
+#fullPage-nav li,
+.fullPage-slidesNav li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+
+.fullPage-slidesNav li {
+    display: inline-block;
+}
+#fullPage-nav li a,
+.fullPage-slidesNav li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fullPage-nav li .active span,
+.fullPage-slidesNav .active span {
+    background: #333;
+}
+#fullPage-nav span,
+.fullPage-slidesNav span {
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #000;
+    background: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+
+/*
+  ========================================
+  Resume
+  ========================================
+*/
+.recontent { 
+  position: absolute;
+  margin: 0 0 0 0; 
+  width: 100%; 
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+.recontent img { 
+  display: block; 
+  max-width: 100%;
+}
+.rebg .photo {
+  top: 10px;
+  left: 10px;
+  position: relative;
+  width: 6%;
+  height: 10%;
+}
+.photo a:hover {
+
+}
