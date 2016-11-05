@@ -4,6 +4,9 @@
   Navigation Bar
   ========================================
 */
+header {
+  position: fixed;
+}
 .section .bg{ 
   position: absolute;
   margin: 0 0 0 0; 
@@ -108,7 +111,6 @@ html, body {
 }
 
 #fullPage-nav { 
-  _display: none; 
   font-size: 12px;
 }
 
@@ -127,7 +129,7 @@ html, body {
 .fullPage-tooltip { 
   float: right; 
   top: 0; 
-  text-align: right;
+  text-align: left;
   margin-right: 18px; 
   font: 15px "cochin"; 
   color: #fff; 
