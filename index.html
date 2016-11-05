@@ -5,8 +5,6 @@
 <meta charset="utf-8">
 <title> Nan's Portfolio </title>
 <link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="responsive-nav.css">
-<script src="responsive-nav.js"></script>
 
 <script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
 <script src="http://cdn.staticfile.org/jqueryui/1.10.3/jquery-ui.min.js"></script>
@@ -21,20 +19,27 @@ $(function(){
 	});
 });
 </script>
+</head>
+<body>
 
+</head>
 <body>
 
 <div class="section section1">
-<div class="bg"><img src="picture/Chicagonight1.jpg" alt="Chicago Night"></div>
-<div id="nav">
-  <ul>
-    <li><a href="#"> Project </a></li>
-    <li><a href="#"> UX Design </a></li>
-    <li><a href="#"> Resume </a></li>
-    <li><a href="#"> About Me </a></li>
-  </ul>
-</div>
+<img class="bg" src="picture/Chicagonight1.jpg" alt="Chicago Night">
+<header class="title">
+<h1> Nan Deng </h1>
 
+<nav class="menu">
+	<ul>
+		<li><a href="index.html"> Home </a></li>
+		<li><a href="project.html"> UX&nbsp;Design </a></li>
+		<li><a href="picture/Resume-Nan Deng.pdf" height=100% width=100%> Resume </a></li>
+		<li><a href="interest.html"> Interests </a></li>
+		<li><a href="introduction.html"> About Me </a></li>
+	</ul>
+</nav>
+</header>
 </div>
 
 <div class="section section2">
@@ -48,8 +53,9 @@ $(function(){
 </div>
 
 <footer id="footer">
+
+<div class="contact"> <strong>Nan Deng</strong> | University of Michigan | School of Information | <abbr title="Phone">Tel:</abbr> (734) 780-9789 | Email: dengnan@umich.edu</div>
 <div class="copyright"> Design &amp; Code by Nan Deng &copy; 2016 | Last Update: 11/05/2016 </div>
-<div class="contact"> Contact Me </div>
 </footer>
 
 </body>

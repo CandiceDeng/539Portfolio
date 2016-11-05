@@ -6,7 +6,10 @@
 */
 header {
   position: fixed;
+  width: 90%;
+  display: inline-block;
 }
+
 .section .bg{ 
   position: absolute;
   margin: 0 0 0 0; 
@@ -25,13 +28,10 @@ header {
 }
 .section1 .menu ul {
   font: bold 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   text-transform: uppercase;
   float: right;
-  margin-top: 60px;
-  right: 30px;
   position: relative;
+  margin-top: -35px;
 }
 .section1 .menu li {
   display: inline-block;
@@ -64,7 +64,7 @@ header {
   display: inline-block;
   color: #fff;
   left: 8%;
-  top: 25px;
+  top: 80px;
   font-size: 14px;
 }
 
@@ -82,7 +82,7 @@ header {
   position: relative;
   clear: both;
   display: block;
-  bottom: 47px;
+  bottom: 40px;
   margin: 0 auto;
   width: 100%;
 }
@@ -91,7 +91,7 @@ header {
   margin: 0 auto;
   position: relative;
   display: block;
-  bottom: 40px;
+  bottom: 47px;
   width: 100%;
   text-align: center;
 }
