@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title> Nan's Portfolio </title>
+
+
+<script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script src="http://www.dowebok.com/demo/2014/77/js/jquery.fullPage.min.js"></script>
+<script>
+$(function(){
+	$.fn.fullpage({
+		verticalCentered: false,
+		anchors: ['page1', 'page2', 'page3', 'page4'],
+		navigation: true,
+		navigationTooltips: ['UX Design', 'Interest', 'Resume', 'About Me']
+	});
+});
+</script>
+<style>
+.title {
+  position: fixed;
+  width: 90%;
+  display: inline-block;
+}
+
+.section .bg{ 
+  position: absolute;
+  margin: 0 0 0 0; 
+  width: 100%; 
+  height: 100%;
+}
+.section .bg img { 
+  display: block; 
+  width: 100%; 
+  height: 100%;
+}
+
+.section1 .menu {
+  text-align: center;
+  position: relative;
+}
+.section1 .menu ul {
+  font: bold 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  float: right;
+  position: relative;
+  margin-top: -35px;
+}
+.section1 .menu li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.section1 .menu a {
+  background: black;
+  border-right: 1px solid rgba(0, 0, 0, .5);
+  color: #fff;
+  padding: 12px 12px;
+  text-decoration: none;
+}
+.section1 .menu a:hover {
+  background: lightgrey;
+  color: black;
+  box-shadow: 10px 10px 5px #888888;
+  text-decoration: none;
+}
+.section1 .menu li:first-child a {
+  border-radius: 4px 0 0 4px;
+}
+.section1 .menu li:last-child a {
+  border-right: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.section1 .title {
+  position: absolute;
+  display: inline-block;
+  color: #fff;
+  left: 8%;
+  top: 80px;
+  font-size: 14px;
+}
+
+#footer {
+  color: #fff;
+}
+
+#footer .copyright {
+  text-align: center;
+  position: relative;
+  clear: both;
+  display: block;
+  bottom: 40px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#footer .contact {
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  bottom: 47px;
+  width: 100%;
+  text-align: center;
+}
+
+
+/*
+  ========================================
+  Slide
+  ========================================
+*/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+#superContainer {
+    height: 100%;
+    position: relative;
+}
+
+#fullPage-nav { 
+  font-size: 12px;
+}
+
+#fullPage-nav li a { 
+  float: right; 
+  width: 21px; 
+  height: 21px; 
+  color: #fff; 
+  text-decoration: none; 
+  text-align: left; 
+}
+#fullPage-nav li .active { 
+  background-position: 0 bottom;
+}
+
+.fullPage-tooltip { 
+  float: right; 
+  top: 0; 
+  text-align: left;
+  margin-right: 18px; 
+  font: 15px "cochin"; 
+  color: #fff; 
+  line-height: 0px;
+  font-weight: bold;
+}
+
+#fullPage-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+}
+
+#fullPage-nav.right {
+    right: 17px;
+}
+
+
+#fullPage-nav li,
+.fullPage-slidesNav li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+
+.fullPage-slidesNav li {
+    display: inline-block;
+}
+#fullPage-nav li a,
+.fullPage-slidesNav li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#fullPage-nav li .active span,
+.fullPage-slidesNav .active span {
+    background: #333;
+}
+#fullPage-nav span,
+.fullPage-slidesNav span {
+    top: 2px;
+    left: 2px;
+    width: 8px;
+    height: 8px;
+    border: 1px solid #fff;
+    background: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+}
+/*
+  ========================================
+  Resume
+  ========================================
+*/
+.recontent { 
+  position: absolute;
+  margin: 0 0 0 0; 
+  width: 100%; 
+  height: 100%;
+  color: #fff;
+  text-align: center;
+}
+.recontent img { 
+  display: block; 
+  max-width: 100%;
+}
+.rebg .photo {
+  top: 10px;
+  left: 10px;
+  position: relative;
+  width: 6%;
+  height: 10%;
+}
+.photo a:hover {
+}
+
+#logo_o {
+  height: 50px;
+  width: 50px;
+}
+
+</style>
+
+</head>
+<body>
+
+
+
+<div class="section section1">
+<img class="bg" src="picture/Chicagonight1.jpg" alt="Chicago Night">
+
+<header class="title">
+<a href="index.html"><img id="logo_o" src="picture/Header.png" alt="photo"></img></a>
+<h1> Nan Deng </h1>
+
+<nav class="menu">
+	<ul>
+		<li><a href="index.html"> Home </a></li>
+		<li><a href="project.html"> UX&nbsp;Design </a></li>
+		<li><a href="picture/Resume-Nan Deng.pdf" height=100% width=100%> Resume </a></li>
+		<li><a href="interest.html"> Interests </a></li>
+		<li><a href="introduction.html"> About Me </a></li>
+	</ul>
+</nav>
+</header>
+
+
+</div>
+
+<div class="section section2">
+	<img class="bg" src="picture/aquarium1.jpg" alt="Chicage Aquarium"/>
+</div>
+<div class="section section3">
+	<img class="bg" src="picture/Jiuzhai1.jpg" alt="Jiu Zhai Gou"/>
+</div>
+<div class="section section4">
+	<img class="bg" src="picture/Wuhou2.jpg" alt="Wuhou Ci"/>
+</div>
+
+<footer id="footer">
+
+<div class="contact"> <strong>Nan Deng</strong> | University of Michigan | School of Information | <abbr title="Phone">Tel:</abbr> (734) 780-9789 | Email: dengnan@umich.edu</div>
+<div class="copyright"> Design &amp; Code by Nan Deng &copy; 2016 | Last Update: 11/05/2016 </div>
+</footer>
+
+</body>
+</html>
